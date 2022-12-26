@@ -1,0 +1,71 @@
+<div class="text-layout">
+    <h1>Pipes Comunes</h1>
+    <p>Pipes incluidos en Angular usualmente en el CommunModule</p>
+</div>
+
+<div class="grid">
+    <div class="col-4">
+        <p-card 
+            header="Uppercase Pipe"
+            [subheader]="name | uppercase"
+        >
+        {{ name  }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card 
+            header="Lowercase Pipe"
+            [subheader]="name | lowercase"
+        >
+                {{ name }}
+        </p-card>
+    </div>
+
+    <div class="col-4">
+        <p-card 
+            header="TitleCase Pipe"
+            [subheader]="name | titlecase"
+        >
+            {{ name  }}
+        </p-card>
+    </div>
+</div>
+
+<!-- ? Date Pipes -->
+<div class="text-layout">
+    <h1>Pipes para manejar fecha y hora</h1>
+</div>
+
+<div class="grid">
+    <div class="col-6">
+        <p-card 
+            header="Pipes para menejo de fecha"
+            
+        >
+            <ul>
+                <li>fecha y hora</li>
+                <li>fecha y hora | date</li>
+                <li>fecha y hora | short</li>
+                <li>fecha y hora | long</li>
+                <li>fecha y hora | custom "MM"</li>
+                <li>fecha y hora | custom "MMMM dd, yyyy"</li>
+            </ul>
+        </p-card>
+    </div>
+
+    <div class="col-6">
+        <p-card 
+            header="Representacion del pipe"
+        >
+            <ul>
+                <li>{{ currentDate }}</li>
+                <li>{{ currentDate | date }}</li>
+                <li>{{ currentDate | date:"short" }}</li>
+                <li>{{ currentDate | date:"long" }}</li>
+                <li>{{ currentDate | date:"MM" }}</li>
+                <li>{{ currentDate | date:"MMMM dd, yyyy" }}</li>
+            </ul>
+        </p-card>
+    </div>
+</div>
