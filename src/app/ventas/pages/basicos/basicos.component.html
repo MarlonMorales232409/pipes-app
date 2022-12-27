@@ -50,6 +50,12 @@
                 <li>fecha y hora | long</li>
                 <li>fecha y hora | custom "MM"</li>
                 <li>fecha y hora | custom "MMMM dd, yyyy"</li>
+                <hr>
+                <li>currentDate | date:"long":"GMT+2"</li>
+                <li>currentDate | date:"long":"GMT+3"</li>
+                <li>currentDate | date:"long":"GMT+3":"en"</li>
+                <li>currentDate | date:"long":"GMT+3":"es"</li>
+                <li>currentDate | date:"long":"GMT+3":"ja"</li>
             </ul>
         </p-card>
     </div>
@@ -65,6 +71,12 @@
                 <li>{{ currentDate | date:"long" }}</li>
                 <li>{{ currentDate | date:"MM" }}</li>
                 <li>{{ currentDate | date:"MMMM dd, yyyy" }}</li>
+                <hr>
+                <li>{{ currentDate | date:"long":"GMT+2" }}</li>
+                <li>{{ currentDate | date:"long":"GMT+3" }}</li>
+                <li>{{ currentDate | date:"long":"GMT+3":"en" }}</li>
+                <li>{{ currentDate | date:"long":"GMT+3":"es" }}</li>
+                <li>{{ currentDate | date:"long":"GMT+3":"ja" }}</li>
             </ul>
         </p-card>
     </div>

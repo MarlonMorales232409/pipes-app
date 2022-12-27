@@ -34,7 +34,8 @@ export class NavbarComponent implements OnInit{
       },
       {
         label: 'Pipes perzonalizados',
-        icon: 'pi pi-cog'
+        icon: 'pi pi-cog',
+        routerLink: 'ordenar'
       }
     ];
   }

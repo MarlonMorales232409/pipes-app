@@ -8,8 +8,10 @@ import { AppComponent } from './app.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es'
+import localeJp from '@angular/common/locales/ja'
 
 registerLocaleData(localeEs)
+registerLocaleData(localeJp)
 
 @NgModule({
   declarations: [
